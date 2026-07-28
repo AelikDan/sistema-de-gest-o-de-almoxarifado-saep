@@ -22,6 +22,7 @@
 | RF17 | O sistema deve registrar, para cada movimentação, o produto, o tipo (entrada/saída), a quantidade, a data informada, o usuário responsável e o momento do registro, mantendo um histórico completo e rastreável. |
 | RF18 | O sistema deve impedir a movimentação de saída quando a quantidade solicitada for maior do que o estoque atual disponível. |
 
+```mermaid
 erDiagram
     USUARIOS ||--o{ MOVIMENTACOES : registra
     CATEGORIAS ||--o{ PRODUTOS : classifica
@@ -66,3 +67,4 @@ erDiagram
         date data_movimentacao
         timestamp criado_em
     }
+```
